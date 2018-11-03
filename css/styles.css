@@ -4,7 +4,7 @@
 /* and above unless overwritten below */
 
 body {
-  background: #fcc;
+
 } 
 
 
@@ -15,9 +15,7 @@ body {
 
   /* applies to screens wider than 499px */
   
-  body {
-    background: #cfc;
-  } 
+ 
 }
 
 
@@ -28,7 +26,5 @@ body {
 
   /* applies to screens wider than 999px */
 
-  body {
-    background: #ccf;
-  } 
+  
 }
