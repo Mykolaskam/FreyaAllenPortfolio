@@ -1,8 +1,19 @@
-
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
   const logo = document.getElementById("logo");
   const nav = document.getElementById("navbar");
-  
+  const body = document.getElementById("body");
+  const menu = document.getElementById("menu");
+
+
+  if (window.scrollY > 300) {
+    menu.classList.add("white");
+    body.classList.add("black");
+  } else {
+    menu.classList.remove("white");
+    body.classList.remove("black");
+  }
+
+
   if (window.scrollY > 400) {
     nav.classList.add("cream");
   } else {
@@ -18,13 +29,12 @@ window.addEventListener("scroll", function() {
 
 });
 
-document.getElementById("menu").addEventListener("click", function() {
+document.getElementById("menu").addEventListener("click", function () {
   const overlay = document.getElementById("overlay");
   overlay.classList.add("open");
 });
 
-document.getElementById("close").addEventListener("click", function() {
+document.getElementById("close").addEventListener("click", function () {
   const overlay = document.getElementById("overlay");
   overlay.classList.remove("open");
 });
-
