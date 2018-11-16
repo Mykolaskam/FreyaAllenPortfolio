@@ -12,7 +12,7 @@ a {
 }
 
 body {
-  background-color: #E8E1D5;
+  background-color: rgb(233, 229, 224);
   transition: 1s;
 }
 
@@ -20,7 +20,7 @@ main {
   margin: 200px 0 0 0;
 }
 
-nav {
+#navbar {
   top: 0px;
   position: fixed;
   width: 100%;
@@ -68,7 +68,7 @@ nav {
 }
 
 .menu {
-  margin-right: 20px;
+  margin-right: 10px;
   height: 70px;
   line-height: 70px;
   float: right;
@@ -77,6 +77,7 @@ nav {
   font-size: 100%;
   border-bottom: 2px solid transparent;
   transition: 0.5s;
+  font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -87,7 +88,6 @@ nav {
 
 #close {
   color: white;
-  margin: 0 20px;
   border-bottom: 2px solid transparent;
 }
 
@@ -154,7 +154,7 @@ nav {
   flex-direction: column;
 }
 
-.box:hover > .box-titles > .line {
+.box:hover>.box-titles>.line {
   width: 300px;
   transition: 0.2s;
 }
@@ -247,8 +247,13 @@ nav {
     margin: 200px 20px 0 20px;
   }
 
-  nav {
+  #navbar {
+    top: 30px;
     background-color: transparent;
+  }
+
+  .box {
+    width: calc(100% - 160px);
   }
 
   .cream {
@@ -285,8 +290,13 @@ nav {
     margin: 200px 20px 0 20px;
   }
 
-  nav {
+  #navbar {
+    top: 30px;
     background-color: transparent;
+  }
+
+  #close {
+    margin: 30px 20px;
   }
 
   .cream {
@@ -334,4 +344,3 @@ nav {
   }
 
 }
-
