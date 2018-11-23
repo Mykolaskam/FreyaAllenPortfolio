@@ -4,17 +4,22 @@ window.addEventListener("scroll", function () {
     const logo = document.getElementById("logo");
     const menu = document.getElementById("menu");
     const nav = document.getElementById("navbar");
+    const titles = document.getElementById("titles");
+
+    
   
     if (window.scrollY > 300) {
       logo.classList.add("white");
       menu.classList.add("white");
       body.classList.add("black");
       nav.classList.add("dark");
+      titles.classList.add("scaled");
     } else {
       logo.classList.remove("white");
       menu.classList.remove("white");
       body.classList.remove("black");
       nav.classList.remove("dark");
+      titles.classList.remove("scaled");
     }
 
     if (window.scrollY > 100) {
@@ -23,15 +28,5 @@ window.addEventListener("scroll", function () {
       logo.classList.remove("hidden");
     }
   
-  });
-
-  document.getElementById("menu").addEventListener("click", function () {
-    const overlay = document.getElementById("overlay");
-    overlay.classList.add("open");
-  });
-  
-  document.getElementById("close").addEventListener("click", function () {
-    const overlay = document.getElementById("overlay");
-    overlay.classList.remove("open");
   });
 

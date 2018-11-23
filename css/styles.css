@@ -20,6 +20,15 @@ main {
   margin: 200px 0 0 0;
 }
 
+#titles {
+  transition: 2s;
+}
+
+.scaled {
+  transform: scale(0.5);
+  transition: 2s;
+}
+
 #navbar {
   top: 0px;
   position: fixed;
@@ -152,11 +161,17 @@ main {
   position: relative;
   display: flex;
   flex-direction: column;
+  transition: 1s;
 }
 
 .box:hover>.box-titles>.line {
   width: 300px;
   transition: 0.2s;
+}
+
+.box:hover {
+transform: scale(0.8);
+transition: 1s;
 }
 
 .line {
