@@ -15,13 +15,13 @@
 
 @keyframes offset {
   100% {
-      stroke-dashoffset: 0;
+    stroke-dashoffset: 0;
   }
 }
 
 @keyframes fill {
   100% {
-      fill: transparent;
+    fill: transparent;
   }
 }
 
@@ -31,7 +31,7 @@
   }
 
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -183,7 +183,6 @@ main {
   color: white;
 }
 
-
 .overlay.open {
   opacity: 1;
   visibility: visible;
@@ -209,13 +208,8 @@ nav {
   background-image: url(../img2.jpg);
   background-position: center;
   background-size: cover;
-  transition: 0.5s;
 }
 
-.right-one:hover {
-  transition: 0.5s;
-  transform: scale(0.9);
-}
 
 .right-two {
   visibility: hidden;
@@ -223,13 +217,8 @@ nav {
   background-image: url(../img2.png);
   background-position: center;
   background-size: cover;
-  transition: 0.5s;
 }
 
-.right-two:hover {
-  transition: 0.5s;
-  transform: scale(0.9);
-}
 
 .box {
   width: 95%;
@@ -248,8 +237,8 @@ nav {
 }
 
 .box:hover {
-transform: scale(0.8);
-transition: 1s;
+  transform: scale(0.8);
+  transition: 1s;
 }
 
 .line {
@@ -331,6 +320,72 @@ transition: 1s;
 }
 
 
+.contact-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.contact-text {
+  width: 30%;
+  font-size: 200%;
+}
+
+form {
+  width: 30%;
+  font-size: 200%;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input {
+  outline: none;
+  margin-bottom: 50px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+  height: 50px;
+  font-size: 70%;
+}
+
+textarea {
+  outline: none;
+  margin-bottom: 50px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+  font-size: 70%;
+}
+
+button {
+  cursor: pointer;
+  transition: 0.5s;
+  border: 1px solid black;
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  color: black;
+  font-size: 70%;
+}
+
+button:hover {
+  transition: 0.5s;
+  border: 1px solid transparent;
+  background-color: black;
+  color: white;
+}
+
+
+
+
 
 /* TABLET STYLES */
 
@@ -370,13 +425,13 @@ transition: 1s;
   .right {
     visibility: hidden;
   }
-  
+
   .right-one {
     visibility: hidden;
   }
-  
+
   .right-two {
-    visibility: hidden; 
+    visibility: hidden;
   }
 
   .dark {
@@ -427,11 +482,11 @@ transition: 1s;
   .right {
     visibility: visible;
   }
-  
+
   .right-one {
     visibility: visible;
   }
-  
+
   .right-two {
     visibility: visible;
   }
