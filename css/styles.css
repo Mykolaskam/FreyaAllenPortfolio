@@ -35,24 +35,7 @@ main {
   margin: 200px 0 0 0;
 }
 
-h5 {
-  margin: auto 0;
-  font-size: 200%;
-  font-family: 'Open Sans', sans-serif;
-}
 
-h6 {
-  margin: auto 0;
-  font-size: 120%;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  padding-bottom: 7px;
-}
-
-h6, h5 {
-  transform: rotate(90deg);
-  margin: auto;
-}
 
 .floating-links {
   width: 85px;
@@ -194,7 +177,7 @@ h6, h5 {
 
 .overlay ul li a {
   text-decoration: none;
-  color: rgb(75, 75, 75);
+  color: rgb(134, 134, 134);
   transition: 0.5s;
 }
 
@@ -260,48 +243,60 @@ nav {
   transition: 0.2s;
 }
 
+.line {
+  transition: 0.2s;
+}
 
-
-.settings {
-  height: 60%;
-  width: 100px;
-  background-color: rgb(255, 255, 255);
-  float: right;
+h5 {
   margin: auto 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
+  font-size: 200%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h6 {
+  margin: auto 0;
+  font-size: 90%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  padding-bottom: 0px;
+}
+
+h6,
+h5 {
+  transform: rotate(0deg);
+  margin: auto;
 }
 
 
 
-.line {
-  transition: 0.2s;
+.settings {
+  height: 60px;
+  width: 70%;
+  background-color: rgb(255, 255, 255);
+  float: right;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.46);
 }
 
 #image {
   position: relative;
   height: 100%;
-  background-image: url(../img2.png);
-  background-position: center;
-  background-size: cover;
-  background-color: white;
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
 }
 
-#image2 {
-  position: relative;
-  height: 100%;
+.image1 {
   background-image: url(../img2.png);
   background-position: center;
   background-size: cover;
-  background-color: white;
-  display: flex;
-  justify-content: flex-end;
 }
 
-#image:hover {
+
+.image1:hover {
   animation: image-1 6s infinite;
 }
 
@@ -594,10 +589,8 @@ button:hover {
     transition: 1s;
   }
 
- 
 
   .about-img {
-   
     width: 60vh;
   }
 
@@ -617,7 +610,34 @@ button:hover {
   .right-two {
     visibility: visible;
   }
- 
+
+  
+  #image {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .settings {
+    height: 60%;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    float: right;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.46);
+  }
+
+  h6,
+  h5 {
+    transform: rotate(90deg);
+    margin: auto;
+  }
+
 }
 
 
@@ -694,11 +714,13 @@ button:hover {
     transition: 1s;
   }
 
-  .contact-page, .about-page{
+  .contact-page,
+  .about-page {
     flex-direction: row;
   }
 
-  .contact-text, .about-text{
+  .contact-text,
+  .about-text {
     width: 30%;
     margin: auto;
   }
@@ -722,4 +744,3 @@ button:hover {
 
 
 }
-
