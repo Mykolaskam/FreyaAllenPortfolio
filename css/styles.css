@@ -35,7 +35,10 @@ main {
   margin: 200px 0 0 0;
 }
 
-
+.big-title {
+  font-size:500%;
+  white-space: nowrap;
+}
 
 .floating-links {
   width: 85px;
@@ -98,7 +101,7 @@ main {
 }
 
 .logo li {
-  display: inline-block;
+
   float: left;
   font-size: 200%;
   opacity: 1;
@@ -175,18 +178,35 @@ main {
   text-align: right;
 }
 
+.overlay ul li {
+  margin: 20px 10px;
+  cursor: pointer;
+}
+
 .overlay ul li a {
   text-decoration: none;
   color: rgb(134, 134, 134);
   transition: 0.5s;
+  border-right: 2px solid rgb(134, 134, 134);
+  padding-right: 30px;
 }
 
-.overlay ul li {
-  margin: 0 10px;
-  cursor: pointer;
+.number {
+  display: inline-block;
+  transform: rotate(90deg);
+  font-size: 50%;
+  font-weight: 700;
+  color: rgb(134, 134, 134);
+  transition: 0.5s;
+
 }
 
 .overlay ul li a:hover {
+  color: white;
+  border-right: 2px solid white;
+}
+
+.overlay ul li a:hover ~ .number {
   color: white;
 }
 
@@ -278,7 +298,7 @@ h5 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.46);
+  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.46);
 }
 
 #image {
@@ -353,17 +373,7 @@ h5 {
 
 .titles {
   text-align: center;
-  margin: 30vh 0 30vh 0;
-}
-
-.latest-work {
-  margin-top: 10px;
-  font-size: 150%;
-}
-
-.footwear-design {
-  font-size: 400%;
-  margin: 70px;
+  margin: 20vh 0 30vh 0;
 }
 
 .white {
@@ -474,7 +484,7 @@ button:hover {
 .gallery-img {
   margin: auto;
   object-fit: cover;
-
+  height: 50vh;
   width: 100%;
 }
 
@@ -485,7 +495,7 @@ button:hover {
   justify-content: center;
   margin: auto;
   border: 1px solid rgb(199, 199, 199);
-  width: 80%;
+  width: 60%;
   min-height: 50vh;
   transition: 1s;
 }
@@ -534,7 +544,23 @@ button:hover {
 
 }
 
+/*  End gallery page   */
 
+/*  About   */
+
+.cv {
+  padding-top: 100px;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+
+
+/*  End about page   */
 
 /* TABLET STYLES */
 
@@ -611,7 +637,7 @@ button:hover {
     visibility: visible;
   }
 
-  
+
   #image {
     position: relative;
     height: 100%;
@@ -629,7 +655,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.46);
+    box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.46);
   }
 
   h6,
@@ -705,8 +731,9 @@ button:hover {
     font-size: 180%;
   }
 
-  .footwear-design {
-    font-size: 700%;
+  .big-title {
+    font-size: 1200%;
+    white-space: nowrap;
   }
 
   .dark {
@@ -740,6 +767,10 @@ button:hover {
 
   .floating-links {
     visibility: visible;
+  }
+
+  .borderbox {
+    width: 30%;
   }
 
 
