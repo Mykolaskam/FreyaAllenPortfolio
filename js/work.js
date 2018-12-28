@@ -2,7 +2,9 @@ window.addEventListener("scroll", function () {
 
   const body = document.getElementById("body");
   const logo = document.getElementById("logo");
+  const logoblack = document.getElementById("logoblack");
   const menu = document.getElementById("menu");
+  const menublack = document.getElementById("menublack");
   const nav = document.getElementById("navbar");
   const titles = document.getElementById("titles");
   const borderbox = document.getElementById("borderbox");
@@ -10,19 +12,19 @@ window.addEventListener("scroll", function () {
 
   if (window.scrollY > 300) {
     if (typeof (logo) != 'undefined' && logo != null) {
-      logo.classList.add("white");
+      logo.classList.add("white-text");
     }
 
     if (typeof (menu) != 'undefined' && menu != null) {
-      menu.classList.add("white");
+      menu.classList.add("white-text");
     }
 
     if (typeof (body) != 'undefined' && body != null) {
-      body.classList.add("black");
+      body.classList.add("black-bc");
     }
 
     if (typeof (nav) != 'undefined' && nav != null) {
-      nav.classList.add("dark");
+      nav.classList.add("black-bc");
     }
 
     if (typeof (borderbox) != 'undefined' && borderbox != null) {
@@ -36,19 +38,19 @@ window.addEventListener("scroll", function () {
   } else {
 
     if (typeof (logo) != 'undefined' && logo != null) {
-      logo.classList.remove("white");
+      logo.classList.remove("white-text");
     }
 
     if (typeof (menu) != 'undefined' && menu != null) {
-      menu.classList.remove("white");
+      menu.classList.remove("white-text");
     }
 
     if (typeof (body) != 'undefined' && body != null) {
-      body.classList.remove("black");
+      body.classList.remove("black-bc");
     }
 
     if (typeof (nav) != 'undefined' && nav != null) {
-      nav.classList.remove("dark");
+      nav.classList.remove("black-bc");
     }
 
     if (typeof (borderbox) != 'undefined' && borderbox != null) {
@@ -61,20 +63,54 @@ window.addEventListener("scroll", function () {
   }
 
   if (window.scrollY > 100) {
-    logo.classList.add("hidden");
+
+    if (typeof (logo) != 'undefined' && logo != null) {
+      logo.classList.add("hidden");
+    }
+
+    if (typeof (logoblack) != 'undefined' && logoblack != null) {
+      logoblack.classList.add("hidden");
+
+      if (window.innerWidth < 500) {
+        logoblack.classList.add("white-text");
+        menublack.classList.add("white-text");
+      }
+    }
+
   } else {
-    logo.classList.remove("hidden");
+
+    if (typeof (logo) != 'undefined' && logo != null) {
+      logo.classList.remove("hidden");
+    }
+
+    if (typeof (logoblack) != 'undefined' && logoblack != null) {
+      logoblack.classList.remove("hidden");
+      logoblack.classList.add("black-text");
+      logoblack.classList.remove("white-text");
+      menublack.classList.add("black-text");
+      menublack.classList.remove("white-text");
+    }
   }
 
 });
 
-document.getElementById("menu").addEventListener("click", function () {
-  const overlay = document.getElementById("overlay");
-  overlay.classList.add("open");
-});
+if (typeof (menublack) != 'undefined' && menublack != null) {
+
+  document.getElementById("menublack").addEventListener("click", function () {
+    const overlay = document.getElementById("overlay");
+    overlay.classList.add("open");
+  });
+
+} else {
+
+  document.getElementById("menu").addEventListener("click", function () {
+    const overlay = document.getElementById("overlay");
+    overlay.classList.add("open");
+  });
+
+}
 
 document.getElementById("close").addEventListener("click", function () {
   const overlay = document.getElementById("overlay");
   overlay.classList.remove("open");
 });
-
