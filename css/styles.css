@@ -316,7 +316,7 @@ h5 {
 }
 
 .image1 {
-  background-image: url(../images/img2.png);
+  background-image: url(../images/oxford1.jpeg);
   background-position: center;
   background-size: cover;
 }
@@ -482,7 +482,8 @@ button:hover {
 
 .img-col {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
   margin: auto;
 }
@@ -513,9 +514,8 @@ button:hover {
 .about-img {
   margin: auto;
   object-fit: cover;
-  height: 100%;
   width: 90%;
-  max-height: 50vh;
+  height: 70vh;
 }
 
 .about-page {
@@ -558,13 +558,24 @@ button:hover {
 .cv {
   padding-top: 100px;
   margin: auto;
-  width: 90%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
 
+.cv-title {
+  font-size: 350%;
+}
 
+.xp-list {
+  list-style-position: inside;
+  list-style-image: url(../svg/bulletpoint.svg)
+}
+
+.xp-title {
+  font-size: 150%;
+}
 
 
 /*  End about page   */
@@ -593,10 +604,6 @@ button:hover {
 
   .box {
     margin-top: 100px;
-  }
-
-  .cream {
-    background-color: transparent;
   }
 
   .logo li {
@@ -629,12 +636,13 @@ button:hover {
     transition: 1s;
   }
 
-
-  .about-img {
-    width: 60vh;
-    max-height: 70vh;
+  .img-col {
+    width: calc(100% - 170px);
   }
 
+  .floating-links {
+    visibility: visible;
+  }
 }
 
 /* between tablet and desktop*/
@@ -679,6 +687,18 @@ button:hover {
     margin: auto;
   }
 
+  .gallery-img {
+    width: 50%;
+  }
+
+  .img-col {
+    width: calc(100% - 170px);
+  }
+
+  .floating-links {
+    visibility: visible;
+  }
+
 }
 
 
@@ -698,10 +718,6 @@ button:hover {
 
   #close {
     margin: 30px 20px;
-  }
-
-  .cream {
-    background-color: transparent;
   }
 
   .logo li {
@@ -729,8 +745,15 @@ button:hover {
     visibility: visible;
   }
 
-  .box {
+  .box,
+  .cv,
+  .img-col,
+  .about-img {
     width: calc(100% - 170px);
+  }
+
+  .about-img {
+    width: 50vh;
   }
 
   .project-title {
@@ -776,16 +799,16 @@ button:hover {
     margin: auto;
   }
 
-  .img-col {
-    width: calc(100% - 160px);
-  }
-
   .floating-links {
     visibility: visible;
   }
 
   .borderbox {
     width: 30%;
+  }
+
+  .gallery-img {
+    width: 50%;
   }
 
 
