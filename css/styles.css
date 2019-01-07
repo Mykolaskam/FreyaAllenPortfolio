@@ -1,6 +1,5 @@
 /* MOBILE AND GLOBAL STYLES */
 
-
 #titles {
   perspective: 25px;
 }
@@ -8,7 +7,6 @@
 #borderbox {
   transition: transform 0.5s;
 }
-
 
 .shoe {
   stroke: rgb(39, 36, 36);
@@ -23,7 +21,6 @@
     stroke-dashoffset: 0;
   }
 }
-
 
 * {
   margin: 0;
@@ -109,7 +106,6 @@ main {
 }
 
 .logo li {
-
   float: left;
   font-size: 200%;
   opacity: 1;
@@ -143,8 +139,6 @@ main {
   font-family: 'Open Sans', sans-serif;
 }
 
-
-
 .menu:hover {
   border-bottom: 2px solid rgb(39, 36, 36);
 }
@@ -157,8 +151,6 @@ main {
 #close:hover {
   border-bottom: 2px solid white;
 }
-
-
 
 .overlay {
   position: fixed;
@@ -188,7 +180,6 @@ main {
 
 .overlay ul li {
   margin: 20px 10px;
-
 }
 
 .overlay ul li a {
@@ -206,7 +197,6 @@ main {
   font-weight: 700;
   color: rgb(134, 134, 134);
   transition: 0.5s;
-
 }
 
 .overlay ul li a:hover {
@@ -240,11 +230,10 @@ nav {
 .right-one {
   visibility: hidden;
   flex: 1;
-  background-image: url(../images/gallery/img16.jpeg);
+  background-image: url(../images/gallery/img2.jpeg);
   background-position: center;
   background-size: cover;
 }
-
 
 .right-two {
   visibility: hidden;
@@ -253,7 +242,6 @@ nav {
   background-position: center;
   background-size: cover;
 }
-
 
 .box {
   width: 95%;
@@ -321,13 +309,11 @@ h5 {
   background-size: cover;
 }
 
-
 .image1:hover {
   animation: image-1 8s infinite;
 }
 
 @keyframes image-1 {
-
   0% {
     background-image: url(../images/shoes/NB1.jpg);
   }
@@ -360,7 +346,6 @@ h5 {
 }
 
 @keyframes image-2 {
-
   0% {
     background-image: url(../images/shoes/amsterdam2.jpg);
   }
@@ -382,7 +367,6 @@ h5 {
   }
 }
 
-
 .image3 {
   background-image: url(../images/shoes/bespoke3.jpg);
   background-position: center;
@@ -394,7 +378,6 @@ h5 {
 }
 
 @keyframes image-3 {
-
   0% {
     background-image: url(../images/shoes/bespoke3.jpg);
   }
@@ -412,7 +395,6 @@ h5 {
   }
 }
 
-
 .image4 {
   background-image: url(../images/shoes/babyshoe1.jpg);
   background-position: center;
@@ -424,7 +406,6 @@ h5 {
 }
 
 @keyframes image-4 {
-
   0% {
     background-image: url(../images/shoes/babyshoe1.jpg);
   }
@@ -446,7 +427,6 @@ h5 {
   }
 }
 
-
 .image5 {
   background-image: url(../images/shoes/Oxford1.jpg);
   background-position: center;
@@ -458,7 +438,6 @@ h5 {
 }
 
 @keyframes image-5 {
-
   0% {
     background-image: url(../images/shoes/Oxford1.jpg);
   }
@@ -476,7 +455,6 @@ h5 {
   }
 }
 
-
 .image6 {
   background-image: url(../images/shoes/HQ1.jpg);
   background-position: center;
@@ -488,7 +466,6 @@ h5 {
 }
 
 @keyframes image-6 {
-
   0% {
     background-image: url(../images/shoes/HQ1.jpg);
   }
@@ -510,7 +487,6 @@ h5 {
   }
 }
 
-
 .image7 {
   background-image: url(../images/shoes/sophia1.jpg);
   background-position: center;
@@ -522,7 +498,6 @@ h5 {
 }
 
 @keyframes image-7 {
-
   0% {
     background-image: url(../images/shoes/sophia1.jpg);
   }
@@ -579,13 +554,10 @@ h5 {
   color: white;
 }
 
-
 .black-bc {
   background-color: rgb(39, 36, 36);
   transition: 1s;
 }
-
-
 
 /*    Contact Page     */
 
@@ -660,13 +632,11 @@ button {
   transition: 0.3s;
   font-size: 50%;
   margin-bottom: 50px;
-
 }
 
 button:hover {
   background-color: rgb(51, 49, 49);
 }
-
 
 /*  End contact page   */
 
@@ -735,12 +705,10 @@ button:hover {
   font-weight: 100;
   font-family: 'Open Sans', sans-serif;
   transition: 0.3s;
-
 }
 
 .button:hover {
   background-color: rgb(51, 49, 49);
-
 }
 
 /*  End gallery page   */
@@ -770,7 +738,6 @@ button:hover {
 }
 
 .cv-company {
-  
   font-size: 90%;
   font-weight: 500;
 }
@@ -791,11 +758,9 @@ button:hover {
   margin-left: auto;
 }
 
-
 /*  End about page   */
 
 /* TABLET STYLES */
-
 
 @media screen and (min-width: 500px) {
 
@@ -811,8 +776,7 @@ button:hover {
 
   .box,
   .about-page,
-  .contact-page
-   {
+  .contact-page {
     width: calc(100% - 160px);
     margin: auto;
   }
@@ -824,18 +788,16 @@ button:hover {
   .cv-title {
     font-size: 350%;
   }
-  
+
   .cv-position {
     font-size: 120%;
     font-weight: 700;
   }
-  
+
   .cv-company {
     font-size: 100%;
     font-weight: 500;
   }
-
- 
 
   .box {
     margin-top: 100px;
@@ -894,7 +856,6 @@ button:hover {
   .right-two {
     visibility: visible;
   }
-
 
   #image {
     position: relative;
@@ -993,7 +954,6 @@ button:hover {
 
   .project-title {
     font-size: 500%;
-
   }
 
   .award {
@@ -1045,6 +1005,4 @@ button:hover {
   .gallery-img {
     width: 50%;
   }
-
-
 }
