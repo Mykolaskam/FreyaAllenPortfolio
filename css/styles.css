@@ -240,7 +240,7 @@ nav {
 .right-one {
   visibility: hidden;
   flex: 1;
-  background-image: url(../images/img2.jpg);
+  background-image: url(../images/gallery/img16.jpeg);
   background-position: center;
   background-size: cover;
 }
@@ -249,7 +249,7 @@ nav {
 .right-two {
   visibility: hidden;
   flex: 1;
-  background-image: url(../images/img2.png);
+  background-image: url(../images/gallery/img19.jpeg);
   background-position: center;
   background-size: cover;
 }
@@ -747,26 +747,48 @@ button:hover {
 
 /*  About   */
 
-.cv {
-  padding-top: 100px;
+.cv-section {
+  padding: 100px 0 0 0;
   margin: auto;
-  width: 95%;
+  width: 90%;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+}
+
+.last {
+  padding-bottom: 200px;
 }
 
 .cv-title {
-  font-size: 350%;
+  font-size: 300%;
 }
 
-.xp-list {
-  list-style-position: inside;
-  list-style-image: url(../svg/bulletpoint.svg)
+.cv-position {
+  color: #D1B384;
+  font-size: 100%;
+  font-weight: 700;
 }
 
-.xp-title {
-  font-size: 150%;
+.cv-company {
+  
+  font-size: 90%;
+  font-weight: 500;
+}
+
+.cv-date {
+  font-weight: 100;
+  font-size: 90%;
+}
+
+.cv-row {
+  margin: 20px 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+.cv-right {
+  text-align: right;
+  margin-left: auto;
 }
 
 
@@ -789,10 +811,31 @@ button:hover {
 
   .box,
   .about-page,
-  .contact-page {
+  .contact-page
+   {
     width: calc(100% - 160px);
     margin: auto;
   }
+
+  .cv-section {
+    width: 50%;
+  }
+
+  .cv-title {
+    font-size: 350%;
+  }
+  
+  .cv-position {
+    font-size: 120%;
+    font-weight: 700;
+  }
+  
+  .cv-company {
+    font-size: 100%;
+    font-weight: 500;
+  }
+
+ 
 
   .box {
     margin-top: 100px;
