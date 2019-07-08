@@ -1,3 +1,3 @@
-# Freya Allen Portfolio
+# CTEC3905 Assignment
 
-Fashion & Footwear Design Portfolio
+Footwear Design Portfolio
